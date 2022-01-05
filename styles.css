@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--vDarkBlue1);    
+}
+
+:root{
+    /* CUSTOM COLORS */
+    --vDarkBlue1 : hsl(216, 50%, 16%);
+    --vDarkBlue2 : hsl(215, 32%, 27%);
+    --vDarkBlue3 : hsl(217, 54%, 11%);
+    --white : hsl(0, 0%, 100%);        
+    --softBlue : hsl(215, 51%, 70%);
+    --cyan : hsl(178, 100%, 50%);   
+
+    /* CUSTOM BORDER-RADIUS */
+    --bRadius : .5em;
+
+    /* CUSTOM SIZE OF PARAGRAPH */
+    --fnSizeP : 18px;
+}
+
+p{    
+    color: var(--vDarkBlue3);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.container__card{        
+    box-sizing: border-box;
+    background-color: var(--vDarkBlue2);
+    border-radius: var(--bRadius);
+    margin: auto;
+    width: 300px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;    
+}
+.card__img-container{
+    margin: 10px auto;
+    width: 85%;
+    height: 240px;
+}
+.card__img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--bRadius);
+}
+.card__title{
+    font-size: 22px;
+    color: var(--white);
+    margin: 5px auto;
+    width: 85%;    
+}
+.card__paragraph{
+    font-size: var(--fnSizeP);    
+    width: 85%;
+    margin: 5px auto;
+    font-weight: 400;
+}
+.card__items-container{    
+    width: 85%;    
+    margin: 5px auto;
+    justify-content: space-between;
+    display: flex;
+}
+.item__icon-price-container{
+    display: flex;    
+    margin: 15px 0px;
+    font-size: 15px;
+}
+.item__icon-price-container img{
+    width: 15px;    
+    background: url("/Solution/images/icon-ethereum.svg");
+    object-fit: cover;    
+    background-repeat: no-repeat;
+    margin: auto 5px;
+}
+.item__icon-price-container p{
+    display: inline-block;
+    margin: auto;
+    color: var(--cyan);
+    font-weight: 400;
+}
+.item__icon-long-container{
+    display: flex;
+}
+.item__icon-long-container img{
+    background-repeat: no-repeat;    
+    width: 20px;
+    height: 20px;    
+    margin: auto 2px;    
+}
+.item__icon-long-container p{
+    margin: auto 2px;
+    font-weight: 300;
+}
+.separator{
+    width: 85%;
+    height: 1px;
+    background-color: var(--softBlue);
+    margin: 5px auto;    
+}
+.card__profile-container{
+    display: flex;
+    width: 85%;    
+    margin: 0px auto;
+    padding: 5px 0px;
+    font-weight: 300;
+}
+.profile__img{
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 0px 0px 2px var(--white);
+    border-radius: 50%;
+    margin: auto 5px;
+}
+.profile__name{
+    margin: auto 5px;
+}
+.profile__name b{
+    color: var(--white);
+}
+
